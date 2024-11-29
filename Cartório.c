@@ -131,7 +131,8 @@ int main() //Funcão principal / global
     	printf("========================\n");
     	printf("\t1 - Registar nomes\n");
     	printf("\t2 - Consutar nomes\n");
-		printf("\t3 - Deletar nomes\n\n");
+		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do sistema\n\n");
    	    printf("Opção: "); //Fim do menu
     
    	    scanf("%d" , &opcao); //Armazenando a escolha do usuário
@@ -152,6 +153,11 @@ int main() //Funcão principal / global
         	case 3:
         	deletar();	
         	break;	
+        	
+        	case 4:
+        	printf("Obrigado por utilizar o nosso sistema!\n");
+        	return 0;
+        	break;
         	
         	default: //opção inválida 
             printf("Essa opção não está disponivel!/n"); //retorno de mensagem para o usuário 	
